@@ -1,0 +1,323 @@
+/**-------------------------My animation starts here-------------------------*/
+
+.realbody{
+	background-color:red;
+	z-index:0;
+}
+.backgroundforanimation{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+.sandpit{
+	width:100%;
+	height:100%;
+	background-color:#EEE;
+	z-index:0;
+	overflow:hidden;
+}
+.brick{
+	position:absolute;
+	z-index:0;
+	height:10%;
+	width:12.5%;
+	background-color:#841F27;
+	border-color:#FFFFFF;
+	border-style:solid;
+	border-width:2px;
+	margin-top:-100%;
+}
+.oddbrick1{	margin-left:0%;		}
+.oddbrick2{	margin-left:12.5%;	}
+.oddbrick3{	margin-left:25%;	}
+.oddbrick4{	margin-left:37.5%;	}
+.oddbrick5{	margin-left:50%;	}
+.oddbrick6{	margin-left:62.5%;	}
+.oddbrick7{	margin-left:75%;	}
+.oddbrick8{	margin-left:87.5%;	}
+.evenbrick1{	margin-left:-6.25%;	}
+.evenbrick2{	margin-left:6.25%;	}
+.evenbrick3{	margin-left:18.75%;	}
+.evenbrick4{	margin-left:31.25%;	}
+.evenbrick5{	margin-left:43.75%;	}
+.evenbrick6{	margin-left:56.25%;	}
+.evenbrick7{	margin-left:68.75%;	}
+.evenbrick8{	margin-left:81.25%;	}
+.evenbrick9{	margin-left:93.75%;	}
+
+
+.pageforanimation{
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	overflow:hidden;
+}
+.sandpitforclearing{
+	z-index:0;
+	background-color:#996600;
+	width:100%;
+	height:100%;
+	opacity:1;
+	-webkit-animation: fill 10s;
+	-moz-animation:fill 10s;
+	-o-animation:fill 10s;
+	animation:fill 10s;
+	-webkit-transform: translate3d(0, 0, 0);
+}
+@-webkit-keyframes fill{
+	0%{		margin-top:100%;
+			opacity:1;
+	}
+	100%{	margin-top:0%;		
+			opacity:1;
+	}
+}
+@-moz-keyframes fill{
+	0%{		margin-top:100%;	
+			opacity:1;
+	}
+	100%{	margin-top:0%;		
+			opacity:1;
+	}
+}
+@-o-keyframes fill{
+	0%{		margin-top:100%;	
+			opacity:1;
+	}
+	100%{	margin-top:0%;		
+			opacity:1;
+	}
+}
+@keyframes fill{
+	0%{		margin-top:100%;	
+			opacity:1;
+	}
+	100%{	margin-top:0%;		
+			opacity:1;
+	}
+}
+@media (min-width:300px){
+	.jcb{
+		width:110%;
+		margin-left:-100%;
+	}
+	.injcb{
+		width:25%;
+		margin-left:78%;
+	}
+	.jcb2{
+		width:110%;	
+		margin-left:88%;
+	}
+	.injcb2{
+		width:25%;
+	}
+
+}
+@media (min-width:500px){
+	.jcb{
+		width:105%;
+		margin-left:-99%;
+	}
+	.injcb{
+		width:16%;
+		margin-left:86%;
+	}
+	.jcb2{
+		width:105%;
+		margin-left:94%;
+	}
+	.injcb2{
+		width:16%;
+	}
+
+}
+@media (min-width:800px){
+	.jcb{
+		width:103%;
+		margin-left:-100%;
+	}
+	.injcb{
+		width:8%;
+		margin-left:93%;
+	}
+	.jcb2{
+		width:103%;	
+		margin-left:97%;
+	}
+	.injcb2{
+		width:8%;
+		margin-left:0%;
+	}
+}
+.jcb{
+	height:100%;
+	opacity:0.5;
+	border-top-right-radius:50px;
+	border-bottom-right-radius:50px;
+	float:left;
+	background-color:#EEE;
+	display:none;
+}
+.injcb{
+	height:100%;
+}
+.jcb2{
+	height:100%;
+	opacity:0.5;
+	border-top-left-radius:50px;
+	border-bottom-left-radius:50px;
+	background-color:#EEE;
+	display:none;
+}
+.injcb2{
+	height:100%;
+}
+#one,#two,#three,#four,#five,#six,#seven,#eight,#nine,#ten{
+	position:absolute;
+	left:0;
+	height:10vh;
+	width:100vw;
+	opacity:1;
+	border-color:#996600;
+	border-width:2px;
+	border-style: solid;
+	background-color:#996600;
+	display:none;
+}
+
+#one{ top:0vh; }
+#two{ top:10vh; }
+#three{ top:20vh; }
+#four{ top:30vh; }
+#five{ top:40vh; }
+#six{ top:50vh; }
+#seven{ top:60vh; }
+#eight{ top:70vh; }
+#nine{ top:80vh; }
+#ten{ top:90vh; }
+
+.cleanup1{
+	-webkit-animation: cleaning1 10s;
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation: cleaning1 10s;
+	-webkit-animation-fill-mode:forwards;
+	-o-animation: cleaning1 10s;
+	-o-animation-fill-mode:forwards;
+	animation: cleaning1 10s;
+	animation-fill-mode:forwards;
+	-webkit-transform: translate3d(0, 0, 0);
+}
+.cleanup2{
+	-webkit-animation: cleaning2 10s;
+	-webkit-animation-fill-mode:forwards;
+	-moz-animation: cleaning2 10s;
+	-mox-animation-fill-mode:forwards;
+	-o-animation: cleaning2 10s;
+	-o-animation-fill-mode:forwards;
+	animation: cleaning2 10s;
+	animation-fill-mode:forwards;
+	-webkit-transform: translate3d(0, 0, 0);
+}
+@-webkit-keyframes cleaning1{
+	0%{ margin-left:  0%; }
+	15%{margin-left: 10%; }
+	20%{ margin-left: 20%; }
+	25%{ margin-left: 25%; }
+	35%{ margin-left: 35%; }
+	50%{ margin-left: 50%; }
+	60%{ margin-left: 60%; }
+	75%{ margin-left: 75%; }
+	85%{ margin-left: 85%; }
+	100%{ margin-left:100%; }
+}
+@-moz-keyframes cleaning1{
+	0%{ margin-left:  0%; }
+	15%{margin-left: 10%; }
+	20%{ margin-left: 20%; }
+	25%{ margin-left: 25%; }
+	35%{ margin-left: 35%; }
+	50%{ margin-left: 50%; }
+	60%{ margin-left: 60%; }
+	75%{ margin-left: 75%; }
+	85%{ margin-left: 85%; }
+	100%{ margin-left:100%; }
+}
+@-o-keyframes cleaning1{
+	0%{ margin-left:  0%; }
+	15%{margin-left: 10%; }
+	20%{ margin-left: 20%; }
+	25%{ margin-left: 25%; }
+	35%{ margin-left: 35%; }
+	50%{ margin-left: 50%; }
+	60%{ margin-left: 60%; }
+	75%{ margin-left: 75%; }
+	85%{ margin-left: 85%; }
+	100%{ margin-left:100%; }
+}
+@keyframes cleaning1{
+	0%{ margin-left:  0%; }
+	15%{margin-left: 10%; }
+	20%{ margin-left: 20%; }
+	25%{ margin-left: 25%; }
+	35%{ margin-left: 35%; }
+	50%{ margin-left: 50%; }
+	60%{ margin-left: 60%; }
+	75%{ margin-left: 75%; }
+	85%{ margin-left: 85%; }
+	100%{ margin-left:100%; }
+}
+@-webkit-keyframes cleaning2{
+	0%{ margin-left: 0%; }
+	15%{ margin-left: -15%; }
+	20%{ margin-left: -20%; }
+	25%{ margin-left: -25%; }
+	35%{ margin-left: -35%; }
+	50%{ margin-left: -50%; }
+	60%{ margin-left: -60%; }
+	75%{ margin-left: -75%; }
+	85%{ margin-left: -85%; }
+	100%{ margin-left:-100%; }
+}
+@-moz-keyframes cleaning2{
+	0%{ margin-left: 0%; }
+	15%{ margin-left: -15%; }
+	20%{ margin-left: -20%; }
+	25%{ margin-left: -25%; }
+	35%{ margin-left: -35%; }
+	50%{ margin-left: -50%; }
+	60%{ margin-left: -60%; }
+	75%{ margin-left: -75%; }
+	85%{ margin-left: -85%; }
+	100%{ margin-left:-100%; }
+}
+@-o-keyframes cleaning2{
+	0%{ margin-left: 0%; }
+	15%{ margin-left: -15%; }
+	20%{ margin-left: -20%; }
+	25%{ margin-left: -25%; }
+	35%{ margin-left: -35%; }
+	50%{ margin-left: -50%; }
+	60%{ margin-left: -60%; }
+	75%{ margin-left: -75%; }
+	85%{ margin-left: -85%; }
+	100%{ margin-left:-100%; }
+}
+@keyframes cleaning2{
+	0%{ margin-left: 0%; }
+	15%{ margin-left: -15%; }
+	20%{ margin-left: -20%; }
+	25%{ margin-left: -25%; }
+	35%{ margin-left: -35%; }
+	50%{ margin-left: -50%; }
+	60%{ margin-left: -60%; }
+	75%{ margin-left: -75%; }
+	85%{ margin-left: -85%; }
+	100%{ margin-left:-100%; }
+}
+
+/**-------------------------My animation ends here-------------------------*/
